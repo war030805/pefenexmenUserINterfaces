@@ -1,0 +1,99 @@
+.hiddenTitle {
+    left: -10000px;
+    position: absolute;
+}
+
+h1, h2 {
+    text-align: center;
+
+}
+
+p {
+    text-align: center;
+}
+
+body{
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Adjust the order of images using flexbox */
+#images img:nth-of-type(1) {
+    order: 4;
+    padding-top: 1rem;
+}
+
+#images img:nth-of-type(2) {
+    order: 1;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+#images img:nth-of-type(3) {
+    order: 2;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+#images img:nth-of-type(4) {
+    order: 3;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+#citations {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; /* Centrer de text */
+}
+
+#citations > div {
+    display: flex;
+    justify-content: center;
+
+    /*flex-wrap: wrap;*/
+}
+
+.citation {
+    border: 2px solid black; /* Randstijl */
+    padding: 20px; /* Binnenste vulling */
+    margin: 10px; /* Buitenmarge */
+    border-radius: 10px; /* Afgeronde hoeken */
+    box-sizing: border-box; /* Inclusief padding en border in de grootte */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, en flex-basis */
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.citation > p {
+    text-align: justify;
+}
+.citation span {
+    margin-top: 20px;
+    text-align: right;
+    display: block;
+    width: 100%;
+}
+
+.citation p::before {
+    content: "\201C    ";
+    font-size: 1.8em;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+
+
+
+
+

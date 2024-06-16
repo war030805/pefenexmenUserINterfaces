@@ -1,0 +1,5 @@
+=== HTML_Semantiek_inhoud ===
+*** Semi-verboden_tags ***
+html/part2-3_start_code.html
+	[Semi-verboden tag] <div>: 25; 26; 31; 35
+	[Semi-verboden tag] <span>: 29; 33; 38
